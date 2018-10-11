@@ -96,8 +96,8 @@ int main() {
             for (int j = 0; j < 16; ++j) {
                 cout << next_magic() << ' ';
             }
-			
-			cout << '\n';
+            
+            cout << '\n';
             break;
         }
     }
