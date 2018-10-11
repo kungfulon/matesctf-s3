@@ -88,11 +88,6 @@ int main() {
         salt1 = salt1_hi | i;
         salt2 = 0;
         init();
-
-        for (int j = 0; j < 17; ++j) {
-            next_magic();
-        }
-
         init();
         
         if (next_magic() == first_number) {
