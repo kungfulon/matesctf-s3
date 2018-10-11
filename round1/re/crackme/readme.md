@@ -45,3 +45,5 @@ This is real flag: matesctf{Do_you_use_SMT_solver}
 
 This is awesome flag: matesctf{null_byte_kills_PRNG}
 ```
+
+Toàn bộ quy trình tính toán lucky number nằm trong file ```crackme_solve.cpp``` (dòng lệnh compile nằm ở comment đầu file). Quy trình giao tiếp với chương trình nằm trong file ```crackme.py```.

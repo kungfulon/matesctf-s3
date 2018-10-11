@@ -1,3 +1,5 @@
+// g++ crackme_solve.cpp -o crackme_solve -Wall -O2 -std=c++17
+
 #include <bits/stdc++.h>
 #include <emmintrin.h>
 
