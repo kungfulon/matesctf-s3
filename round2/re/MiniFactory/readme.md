@@ -46,4 +46,4 @@ matesctf{1AA03492CB9FC65FA6B9E98077B6DC23}
 
 ## Trivia
 
-Mình bắt đầu làm bài này vào buổi chiều, khi đã có đội first blood được rồi. Trong lúc thi, mình bỏ qua mất cái `FactoryData` và hàm `VirtualFactory::Work`. Mình tưởng là hàm `BinFactory::Check` chỉ gọi `VirtualFactory::Process` của 4 cái `Factory` kia thôi nên mãi không thấm việc lấy / truyền dữ liệu của các `Factory`. Mình quyết định vất vào GDB, break tại mấy hàm `VirtualFactory::Process` để theo dõi sự biến đổi của data, sau đó hiểu được flow và đảo ngược. Đến sau khi thi xong mới phát hiện ra là mình đã đốt cháy giai đoạn.
+Mình bắt đầu làm bài này vào buổi chiều, khi đã có đội first blood được rồi. Trong lúc thi, mình bỏ qua mất cái `FactoryData` và hàm `VirtualFactory::Work`. Mình tưởng là hàm `BinFactory::Check` chỉ gọi `VirtualFactory::Process` của 4 cái `Factory` kia thôi nên mãi không thấm việc lấy / truyền dữ liệu của các `Factory`. Mình quyết định vất vào GDB, break tại mấy hàm `VirtualFactory::Process` đã override của 4 `Factory` kia để theo dõi sự biến đổi của data, sau đó hiểu được flow và đảo ngược. Đến sau khi thi xong mới phát hiện ra là mình đã đốt cháy giai đoạn.
