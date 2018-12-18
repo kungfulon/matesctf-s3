@@ -33,7 +33,7 @@ Implement của các layer này khá đơn giản, các bạn có thể đọc t
 - Sau đó là một vòng lặp 100 lần, với mỗi lần lặp:
     - Gọi hàm `VirtualFactory::Work` của 4 `Factory` theo thứ tự: `CAESAR`, `XOR_BIT2`, `XOR_BIT3`, `REVERSE`
     - Sau khi 4 `Factory` "làm việc" xong, `BinFactory` lấy `data` đã được xử lý. Nếu `size` của `data` lớn hơn `0`, ra khỏi vòng lặp.
-- Nếu `size` của data lớn hơn `0`, so sánh `size` với `MAGIC_SIZE`, nếu bằng thì tiếp tục kiểm tra so khớp `data` với `MAGIC`. Nếu khớp, thông báo chúc mừng và trả về `true`
+- Nếu `size` của data lớn hơn `0`, so sánh `size >> 3` với `MAGIC_SIZE`, nếu bằng thì tiếp tục kiểm tra so khớp `data` với `MAGIC`. Nếu khớp, thông báo chúc mừng và trả về `true`
 - Tất cả các trường hợp còn lại, thông báo không khớp và trả về `false`
 
 Có 1 chỗ khá hay trong bài này, đó là tác giả nhân 8 lần size lên để xử lý, và trong hàm lấy / truyền data, có đoạn kiểm tra bất kỳ 3 bits cuối của tổng size đã lấy / truyền có bật hay không, nếu có thì encode / decode, không thì chỉ gán đơn thuần (cách encode / decode xin mời các bạn đọc code).
